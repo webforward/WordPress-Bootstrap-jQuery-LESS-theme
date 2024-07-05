@@ -25,7 +25,7 @@
                     <div class="row mt-1">
                         <div class="col-md-9">
                             <div class="copyright">
-                                <?php the_field('copyright', 'option'); ?>
+                                <?php echo get_field('copyright', 'option'); ?>
                             </div>
                         </div>
                         <div class="col-md-3">

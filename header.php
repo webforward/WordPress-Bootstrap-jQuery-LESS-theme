@@ -28,6 +28,7 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class('theme' . get_field('theme')); ?>>
+<?php require get_template_directory() . '/sections/topbar.php'; ?>
 <div id="wrap">
     <header id="header" data-turbo-permanent>
         <div class="container-fluid">

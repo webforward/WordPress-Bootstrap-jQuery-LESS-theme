@@ -65,6 +65,36 @@ document.addEventListener("turbo:load", function () {
         ]
     });
 
+    $(".slider.logos").slick({
+        autoplay: true,
+        autoplaySpeed: 1,
+        speed: 6000,
+        prevArrow: null,
+        nextArrow: null,
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+        cssEase: 'linear',
+        waitForAnimate: false,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+        ]
+    });
+
 
 
 });

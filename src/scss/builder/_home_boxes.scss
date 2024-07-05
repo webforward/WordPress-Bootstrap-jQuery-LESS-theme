@@ -1,0 +1,22 @@
+#builder > section.home_boxes {
+  a.box {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    overflow: hidden;
+
+    border-top-right-radius: 2rem;
+    @include drop-shadow;
+
+    h4 {
+      padding: 1rem 1.7rem;
+      font-size: 1.6em;
+    }
+
+    &:hover h3 {
+      color: map-get($theme-colors, 'color4');
+    }
+
+  }
+}

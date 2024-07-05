@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 pe-md-2">
-                <h3><?php the_sub_field('title'); ?></h3>
+                <h3><?php echo get_sub_field('title'); ?></h3>
             </div>
             <div class="col-md-9">
                 <?php

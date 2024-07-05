@@ -11,9 +11,9 @@ $position = get_sub_field('position');
             </div>
             <div class="col-lg-6 <?php echo $position==='left'?'order-md-1':'order-md-0' ?>">
                 <div class="content">
-                    <h3 class="m-0"><?php the_sub_field('title'); ?></h3>
+                    <h3 class="m-0"><?php echo get_sub_field('title'); ?></h3>
                     <div class="my-1 editable-content">
-                        <?php the_sub_field('text'); ?>
+                        <?php echo get_sub_field('text'); ?>
                     </div>
                     <div>
                         <?php

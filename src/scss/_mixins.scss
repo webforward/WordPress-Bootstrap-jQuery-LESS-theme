@@ -228,7 +228,8 @@
     // Theme Builder
     .most_popular a.item-programme:hover,
     .programmes_by_level a.item-programme:hover,
-    .related_programmes a.item-programme:hover {
+    .related_programmes a.item-programme:hover,
+    .programmes a.item-programme:hover {
       background: $color !important;
 
       .btn, .btn:hover {

@@ -13,11 +13,11 @@
                                     </div>
                                 <?php endif; ?>
 
-                                <h4 class="h3 m-0 <?php the_sub_field('title_class'); ?>"><?php the_sub_field('title'); ?></h4>
+                                <h4 class="h3 m-0 <?php echo get_sub_field('title_class'); ?>"><?php echo get_sub_field('title'); ?></h4>
 
                                 <?php if (strlen(get_sub_field('text')) > 20) : ?>
                                     <div class="mt-1 editable-content">
-                                        <?php the_sub_field('text'); ?>
+                                        <?php echo get_sub_field('text'); ?>
                                     </div>
                                 <?php endif; ?>
 

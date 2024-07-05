@@ -32,7 +32,7 @@ $xs-up: "min-width: " + map-get($grid-breakpoints, 'xs');
 
 $theme-colors: (
         "white": #FFFFFF,
-        "color1": #495A69,
+        "color1": #4d5052,
         "color2": #2E4C77,
         "color3": #6ED0D8,
         "color4": #E42085,
@@ -42,7 +42,8 @@ $theme-colors: (
         "theme3": #EBE452,
         "theme4": #E68853,
         "theme5": #7A2063,
-        "theme6": #19848F
+        "theme6": #19848F,
+        "theme7": #E42085,
 );
 
 $bg-colors: (
@@ -52,6 +53,7 @@ $bg-colors: (
         "theme4": #F5F9F8,
         "theme5": #F6F7F1,
         "theme6": #F6F7F1,
+        "theme7": #F6F7F1,
 );
 
 $border-radius: 0;

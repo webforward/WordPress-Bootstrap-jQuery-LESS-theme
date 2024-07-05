@@ -13,7 +13,7 @@ $col_sm = floor(12 / get_sub_field('columns_sm'));
                     ?>
                         <div class="col-md-<?php echo $col_sm; ?> col-xl-<?php echo $col_lg; ?>">
                             <a class="box" href="<?php echo $link['url'] ?? ''; ?>" target="<?php echo $link['target'] ?? ''; ?>">
-                                <h3 class="m-0 <?php the_sub_field('title_class'); ?>"><?php the_sub_field('title'); ?></h3>
+                                <h3 class="m-0 <?php echo get_sub_field('title_class'); ?>"><?php echo get_sub_field('title'); ?></h3>
                                 <?php if (get_sub_field('image')) : ?>
                                     <div class="image">
                                         <?php echo wp_get_attachment_image(get_sub_field('image'), '600x600'); ?>

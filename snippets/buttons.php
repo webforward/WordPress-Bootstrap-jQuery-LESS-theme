@@ -6,7 +6,7 @@ if(have_rows($button_field)): ?>
         $link = get_sub_field('link');
         $target = get_sub_field('target') === '_self' ? '' : get_sub_field('target');
         ?>
-            <a class="btn btn-outline arrow <?php the_sub_field('class'); ?>" target="<?php echo $target; ?>" href="<?php echo $link['url'] ?? ''; ?>" title="<?php echo $link['title'] ?? ''; ?>"><?php the_sub_field('text'); ?></a>
+            <a class="btn btn-outline arrow <?php echo get_sub_field('class'); ?>" target="<?php echo $target; ?>" href="<?php echo $link['url'] ?? ''; ?>" title="<?php echo $link['title'] ?? ''; ?>"><?php echo get_sub_field('text'); ?></a>
             <br />
         <?php endwhile; ?>
     </div>

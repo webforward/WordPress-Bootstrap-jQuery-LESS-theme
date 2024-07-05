@@ -1,6 +1,6 @@
 <a class="item-programme" href="<?php the_permalink(); ?>" style="display: flex">
-    <div class="image">
-        <?php echo wp_get_attachment_image( get_field('icon'), '100x100' ); ?>
+    <div class="image rounded-full">
+        <?php echo wp_get_attachment_image( get_field('icon'), 'icon' ); ?>
     </div>
 
     <?php

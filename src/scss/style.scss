@@ -10,6 +10,7 @@
 
 @import "general";
 
+@import 'sections/topbar';
 @import 'sections/header';
 @import 'sections/footer';
 @import 'sections/sidebar';
@@ -30,10 +31,14 @@
 
 @import 'builder/most_popular';
 @import 'builder/text_with_image';
+@import 'builder/text_with_video';
 @import 'builder/centered_logos';
+@import 'builder/centered_logos_clients';
+@import 'builder/centered_logos_accreditations';
 @import 'builder/discover_boxes';
 @import 'builder/testimonials';
 @import 'builder/striped_bar';
+@import 'builder/programmes';
 @import 'builder/programmes_by_level';
 @import 'builder/programmes_by_sector';
 @import 'builder/link_list';
@@ -43,6 +48,12 @@
 @import 'builder/promo_boxes';
 @import "builder/solution_buttons";
 @import "builder/call_to_action";
+@import "builder/home_boxes";
+
+.rounded-full {
+  border-radius: 100%;
+  overflow: hidden;
+}
 
 .single-programmes {
   .accordion {

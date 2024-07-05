@@ -3,7 +3,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   @include acumin-pro-regular;
-  font-size: 18px;
+  font-size: 19px;
   color: $body-text;
 
   @media ($xs-down) {
@@ -14,7 +14,7 @@ body {
 #wrap {
   overflow: hidden;
   @media ($md-up) {
-    padding: 130px 2rem 0;
+    padding: 160px 2rem 0;
   }
   @media ($sm-down) {
     padding-top: 0;

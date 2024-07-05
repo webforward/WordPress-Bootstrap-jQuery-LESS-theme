@@ -3,9 +3,9 @@
         <div class="row">
             <div class="col-lg-6 col-md-8 mt-1 mt-sm-2">
                 <div class="content">
-                    <h1 class="my-1"><?php the_field('hero_title'); ?></h1>
+                    <h1 class="my-1"><?php echo get_field('hero_title'); ?></h1>
                     <div class="my-1">
-                        <?php the_field('hero_text'); ?>
+                        <?php echo get_field('hero_text'); ?>
                     </div>
                     <div class="my-1">
                         <?php

@@ -3,11 +3,11 @@
     $col_sm = floor(12 / get_sub_field('columns_sm'));
 ?>
 <div class="my-2 my-sm-5<?php echo get_sub_field('overflow') ? ' overflow' : ''; ?>">
-    <div class="container-fluid py-2 py-sm-3" style="background-color: <?php the_sub_field('background_colour'); ?>">
+    <div class="container-fluid py-2 py-sm-3" style="background-color: <?php echo get_sub_field('background_colour'); ?>">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-xl-6 ">
-                    <h3 style="color: <?php the_sub_field('title_colour'); ?>"><?php the_sub_field('title'); ?></h3>
+                    <h3 style="color: <?php echo get_sub_field('title_colour'); ?>"><?php echo get_sub_field('title'); ?></h3>
                 </div>
             </div>
 
@@ -24,11 +24,11 @@
                                     </div>
                                     <?php endif; ?>
 
-                                    <h4 class="m-0 <?php the_sub_field('title_class'); ?>"><?php the_sub_field('title'); ?></h4>
+                                    <h4 class="m-0 <?php echo get_sub_field('title_class'); ?>"><?php echo get_sub_field('title'); ?></h4>
 
                                     <?php if (strlen(get_sub_field('text')) > 20) : ?>
                                         <div class="my-1 editable-content">
-                                            <?php the_sub_field('text'); ?>
+                                            <?php echo get_sub_field('text'); ?>
                                         </div>
                                     <?php endif; ?>
 

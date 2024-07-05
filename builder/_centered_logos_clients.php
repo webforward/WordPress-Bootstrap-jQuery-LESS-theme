@@ -1,13 +1,16 @@
-<section class="footer_logos my-2 my-sm-3">
+<div class="my-2 my-sm-5">
     <div class="container">
         <div class="text-center">
-            <h3 class="mt-1 mb-2"><?php echo get_field('fl_title', 'option'); ?></h3>
-        </div>
+            <h3 class="my-1"><?php echo get_sub_field('title'); ?></h3>
+            <div class="my-1 editable-content">
+                <?php echo get_sub_field('text'); ?>
+            </div>
 
+        </div>
     </div>
 
     <?php
-    $images = get_field('fl_logos', 'option');
+    $images = get_field('cl_images', 'option');
     $size = 'logos';
     if ($images): ?>
         <div class="images slider logos mt-2">
@@ -18,5 +21,4 @@
             <?php endforeach; ?>
         </div>
     <?php endif; ?>
-
-</section>
+</div>
