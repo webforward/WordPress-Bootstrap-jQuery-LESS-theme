@@ -28,9 +28,7 @@
                             <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
                                 <div class="testimonial">
                                     <div>
-                                        <span class="quote">&quot;</span>
-                                        <?php echo strip_tags(get_the_content()); ?>
-                                        <span class="quote">&quot;</span>
+                                        <?php echo strip_tags(get_the_content(), '<img>'); ?>
                                     </div>
                                     <p class="fw-bold text-theme m-0 mt-1"><?php the_title(); ?></p>
                                 </div>
