@@ -86,6 +86,8 @@ $breadcrumb-divider: quote(">");
 $table-border-color: lighten(black, 90%);
 $table-group-separator-color: darken($table-border-color, 10%);
 
+$tooltip-border-radius: 5px;
+
 // Custom
 $body-text: map-get($theme-colors, 'color1');
 $body-bg: white;

@@ -5,7 +5,8 @@ import $ from 'jquery'
 window.jQuery = window.$ = $
 
 // Bootstrap JS
-import 'bootstrap';
+import '@popperjs/core';
+import * as bootstrap from 'bootstrap'
 import 'jquery.cookie';
 
 // Slick Carousel
@@ -28,6 +29,9 @@ document.addEventListener("turbo:before-render", (event) => {
 
 
 document.addEventListener("turbo:load", function () {
+
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
     if (!$.cookie('alert-modal'))
         $('.alert-modal').removeClass('d-none');

@@ -4,22 +4,19 @@
   "devDependencies": {
     "@hotwired/turbo": "^7.2.4",
     "@kucrut/vite-for-wp": "^0.5.2",
-    "@popperjs/core": "^2.11.6",
-    "bootstrap": "^5.2.3",
+    "bootstrap": "5.2.3",
     "jquery": "^3.6.3",
     "jquery.cookie": "^1.4.1",
+    "sal.js": "^0.8.5",
     "sass": "^1.57.1",
     "slick-carousel": "^1.8.1",
     "vite": "^4.0.4",
-    "sal.js": "^0.8.5",
-    "wp.scss": "^1.1.2"
+    "wp.scss": "^1.1.2",
+    "@popperjs/core": "^2.11.8"
   },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
-  },
-  "dependencies": {
-
   }
 }
