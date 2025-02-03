@@ -3,10 +3,11 @@
 
             if (!is_front_page()) require('sections/footer_boxes.php');
 
-            if (is_front_page()) require 'sections/homepage-people.php';
-            else require 'snippets/people.php';
+//            if (is_front_page()) require 'sections/homepage-people.php';
+//            else require 'snippets/people.php';
+            if (!is_front_page()) require 'snippets/people.php';
 
-            require('snippets/modal.php');
+                require('snippets/modal.php');
             ?>
             </div>
             <footer id="footer" data-turbo-permanent class="pt-3 pb-2 bg-theme1">
